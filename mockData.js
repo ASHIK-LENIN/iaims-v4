@@ -1,0 +1,196 @@
+// Mock users data
+export const mockUsers = [
+  {
+    id: 1,
+    username: "admin",
+    password: "password",
+    name: "Admin User",
+    role: "admin",
+  },
+  {
+    id: 2,
+    username: "user",
+    password: "password",
+    name: "Regular User",
+    role: "user",
+  },
+]
+
+// Mock branches data
+export const mockBranches = [
+  {
+    id: 1,
+    code: "BR001",
+    name: "Mumbai Central",
+    itPocName: "John Smith",
+    contactNumber: "+91 98765 43210",
+    totalAssets: 5,
+    assets: [
+      {
+        id: "BR001-PC-001",
+        branchCode: "BR001",
+        employeeId: "EMP001",
+        employeeName: "Rahul Sharma",
+        group: "Operations",
+        businessImpact: "High",
+        assetTag: "AST-PC-001",
+        description: "Desktop Computer",
+        productName: "Dell OptiPlex 7070",
+        serialNumber: "DELL7070XJ23",
+        currentStatus: "Operational",
+        remarks: "Regular maintenance done",
+        status: "Active",
+        itPocRemarks: "No issues reported",
+        type: "Desktop",
+        model: "Dell OptiPlex 7070",
+        purchaseDate: "2021-03-15",
+        assignedTo: "Front Desk",
+      },
+      {
+        id: "BR001-PC-002",
+        branchCode: "BR001",
+        employeeId: "EMP002",
+        employeeName: "Priya Patel",
+        group: "Management",
+        businessImpact: "Critical",
+        assetTag: "AST-PC-002",
+        description: "Desktop Computer",
+        productName: "HP EliteDesk 800 G6",
+        serialNumber: "HP800G6T45J",
+        currentStatus: "Operational",
+        remarks: "New installation",
+        status: "Active",
+        itPocRemarks: "Setup completed",
+        type: "Desktop",
+        model: "HP EliteDesk 800 G6",
+        purchaseDate: "2021-04-22",
+        assignedTo: "Manager Cabin",
+      },
+      {
+        id: "BR001-MON-001",
+        branchCode: "BR001",
+        employeeId: "EMP001",
+        employeeName: "Rahul Sharma",
+        group: "Operations",
+        businessImpact: "Medium",
+        assetTag: "AST-MON-001",
+        description: "Monitor",
+        productName: "Dell P2419H",
+        serialNumber: "DELLP2419H56",
+        currentStatus: "Operational",
+        remarks: "Regular maintenance done",
+        status: "Active",
+        itPocRemarks: "No issues reported",
+        type: "Monitor",
+        model: "Dell P2419H",
+        purchaseDate: "2021-03-15",
+        assignedTo: "Front Desk",
+      },
+      {
+        id: "BR001-PRT-001",
+        branchCode: "BR001",
+        employeeId: "",
+        employeeName: "",
+        group: "Shared",
+        businessImpact: "High",
+        assetTag: "AST-PRT-001",
+        description: "Printer",
+        productName: "HP LaserJet Pro M404dn",
+        serialNumber: "HPM404DNXJ78",
+        currentStatus: "Under Repair",
+        remarks: "Paper jam issue",
+        status: "Under Repair",
+        itPocRemarks: "Scheduled for service",
+        type: "Printer",
+        model: "HP LaserJet Pro M404dn",
+        purchaseDate: "2021-03-30",
+        assignedTo: "",
+      },
+      {
+        id: "BR001-BIO-001",
+        branchCode: "BR001",
+        employeeId: "",
+        employeeName: "",
+        group: "Security",
+        businessImpact: "Critical",
+        assetTag: "AST-BIO-001",
+        description: "Biometric Device",
+        productName: "Mantra MFS100",
+        serialNumber: "MFS100A2B3C4",
+        currentStatus: "Operational",
+        remarks: "Working properly",
+        status: "Active",
+        itPocRemarks: "Firmware updated",
+        type: "Biometric",
+        model: "Mantra MFS100",
+        purchaseDate: "2021-02-10",
+        assignedTo: "Entry Gate",
+      },
+    ],
+  },
+  {
+    id: 2,
+    code: "BR045",
+    name: "Delhi Main",
+    itPocName: "Amit Kumar",
+    contactNumber: "+91 87654 32109",
+    totalAssets: 7,
+    assets: [
+      // Similar asset structure as above
+    ],
+  },
+  {
+    id: 3,
+    code: "BR112",
+    name: "Bangalore Tech Park",
+    itPocName: "Deepak Nair",
+    contactNumber: "+91 76543 21098",
+    totalAssets: 6,
+    assets: [
+      // Similar asset structure as above
+    ],
+  },
+  {
+    id: 4,
+    code: "BR238",
+    name: "Chennai Downtown",
+    itPocName: "Lakshmi Subramaniam",
+    contactNumber: "+91 65432 10987",
+    totalAssets: 4,
+    assets: [
+      // Similar asset structure as above
+    ],
+  },
+]
+
+// System overview data
+export const mockSystemOverview = {
+  totalBranches: 6243,
+  totalAssets: 87954,
+  assetCounts: {
+    desktops: 32145,
+    monitors: 28976,
+    printers: 12879,
+    thinClients: 8765,
+    biometrics: 3421,
+    webcams: 1768,
+  },
+}
+
+// Asset types
+export const assetTypes = [
+  { value: "Desktop", label: "Desktop" },
+  { value: "Monitor", label: "Monitor" },
+  { value: "Printer", label: "Printer" },
+  { value: "ThinClient", label: "Thin Client" },
+  { value: "Biometric", label: "Biometric" },
+  { value: "Webcam", label: "Webcam" },
+]
+
+// Status options
+export const statusOptions = [
+  { value: "Active", label: "Active" },
+  { value: "Under Repair", label: "Under Repair" },
+  { value: "Decommissioned", label: "Decommissioned" },
+  { value: "In Transit", label: "In Transit" },
+]
